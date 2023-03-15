@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxytool</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- Swiper js -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    
+    <!-- font awesome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+          
+            <img id="logo" src="./images/navLogo.png" alt="">
+            <i id="ham-menu" class="fa-solid fa-bars"></i>
+            <ul id="nav-bar">
+                <li><a href="">Nav link 1</a></li>
+                <li><a href="">Nav link 1</a></li>
+                <li><a href="">Nav link 1</a></li>
+                <!-- Mobile version -->
+                <div>
+                    <button class="signup-btn2">Sign up</button>
+                </div>
+            </ul>
+            <!-- Pc version -->
+            <button class="signup-btn">Sign up</button>
+        </nav>
+    </header>
+
+<main>
+    <!-- Hero section -->
+    <section >
+        <div class="hero-section">
+            <div class="tagline-container">
+                <h2 class="hero-title">Progress <span class="hero-sub-title"> faster,</span> deploy <span class="hero-sub-title"> sooner</span> with less code and errors</h2>
+                <img class="shape" src="./images/shape1.png" alt="">
+                <img class="line" src="./images/Line.png" alt="">
+            </div>
+    
+            <div class="cta-container">
+                <button class="cta-signup-btn">sign up</button>
+                <button class="cta-btn">Try sandbox</button>
+            </div>
+            
+            <!-- mocking -->
+            <div class="mocking-container">
+                <div class="mocking"></div>
+            </div>
+           
+    
+            <div class="hero-gradient-container">
+                <img class="hero-gradient-img" src="./images/header-gradient.png" alt="">
+            </div>
+            
+            <div class="video-section-container">
+                <p class="header-text">Watch the video to learn more</p>
+                <!-- video -->
+                <div class="video-wrapper">
+                    <iframe  class="video"  src="https://www.youtube.com/embed/HdLyb30OFT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Blog section -->
+    <section class=" blog-section">
+       <div class="blog-wrapper">
+            <div>
+                <h2 class="blog-header-text">Some cool tagline explaining why they should read the posts</h2>
+                <div class="bg-logo-container">
+                    <img class="bg-logo" src="./images/Logo.png" alt="">
+                </div>
+            </div>
+            <!-- Blog Cards -->
+          <div class="blog-card-container">
+            <!-- card 1 -->
+            <div class="blog-card">
+                <h2 class="blog-card-title">Blog post title Blog post title Blog post title</h2>
+                <div>
+                    <p class="blog-card-text">Developing a frontend app without a backend (so the frontend team doesn't have to wait for the backend team to deploy something to start working)</p>
+                </div>
+                <div class="blog-card-btn-wrapper">
+                    <a class="blog-card-btn" href="">Read more</a>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="blog-card">
+                <h2 class="blog-card-title">Blog post title Blog post title Blog post title</h2>
+                <div>
+                    <p class="blog-card-text">Developing a frontend app without a backend (so the frontend team doesn't have to wait for the backend team to deploy something to start working)</p>
+                </div>
+                <div class="blog-card-btn-wrapper">
+                    <a class="blog-card-btn" href="">Read more</a>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="blog-card">
+                <h2 class="blog-card-title">Blog post title Blog post title Blog post title</h2>
+                <div>
+                    <p class="blog-card-text">Developing a frontend app without a backend (so the frontend team doesn't have to wait for the backend team to deploy something to start working)</p>
+                </div>
+                <div class="blog-card-btn-wrapper">
+                    <a class="blog-card-btn" href="">Read more</a>
+                </div>
+            </div>
+          </div>
+
+
+       </div>
+    </section>
+
+
+
+<!-- -- --- --- --- --- Specs Section --- ---- --- ---  -- -->
+<section class="specs-section-container">
+    <h2 class="specs-title">Introducing <span class="specs-inner-title">Proxytool</span>, your new best friend for mocking</h2>
+
+
+    <!-- specs Desktop version -->
+    
+<div class="desktop-slider-container">
+    <div class="gradient-img-container">
+        <img class="specs-gradient-pc" src="./images/Blur.png" alt="">
+         <img class="specs-image" src="./images/Vector.png" alt="">
+    </div>
+
+  <div class="swiper-container slider1">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+           <!-- block 1 -->
+           
+                <div class="specs-wrapper">
+                    <div class="specs-img-wrapper">
+                            <div class="wrapper-for-label">
+                                <div class="specs-img01-wrapper">
+                                    <img class="specs-img01" src="./images/01.png" alt="1 png">
+                                    <button class="stack-img-label1">partial mock</button>
+                                </div>
+                            </div>
+                        <img class="specs-stack1" src="./images/Stacks.png" alt="stacks">
+                            <div class="specs-down-text-wrapper">
+                               <div>
+                                <p class="specs-down-text">Mock/change only a part 
+                                    of the request/response. For example, you can add an extra header to the request, like an auth token. Or you can add an icon to every element in the response list.
+                                </p>
+                               </div>
+                               <div>
+                                    <a class="specs-down-btn" href="">Learn more</a>
+                               </div>
+                            </div>
+                     </div>
+                   </div>
+           
+           <!-- block 1 end -->
+        </div>
+
+
+
+        <div class="swiper-slide">
+           <!-- block 2 -->
+
+           <div class="specs-wrapper">
+            <div class="specs-img-wrapper">
+                    <div class="wrapper-for-label">
+                        <div class="specs-img01-wrapper">
+                            <img class="specs-img01" src="./images/02.png" alt="1 png">
+                            <!-- <button class="stack-img-label1">partial mock</button> -->
+                            <button class="stack-img-label2">full mock</button>
+                        </div>
+                    </div>
+                <img class="specs-stack2" src="./images/Stack2.png" alt="stacks">
+                    <div class="specs-down-text-wrapper">
+                       <div>
+                        <p class="specs-down-text2">Mock an entire response. When your backend is not ready, just mock like it's working
+                        </p>
+                       </div>
+                       <div>
+                            <a class="specs-down-btn2" href="">Learn more</a>
+                       </div>
+                    </div>
+             </div>
+           </div>
+
+           <!-- block 2 end -->
+        </div>
+        <div class="swiper-slide">
+                      <!-- block 3 -->
+
+                      <div class="specs-wrapper">
+                        <div class="specs-img-wrapper">
+                                <div class="wrapper-for-label">
+                                    <div class="specs-img01-wrapper">
+                                        <img class="specs-img01" src="./images/03.png" alt="1 png">
+                                        <!-- <button class="stack-img-label1">partial mock</button> -->
+                                          <button class="stack-img-label3">code based smart rules</button>
+                                    </div>
+                                </div>
+                            <img class="specs-stack3" src="./images/Stack3.png" alt="stacks">
+                                <div class="specs-down-text-wrapper">
+                                   <div>
+                                    <p class="specs-down-text">You want to achieve something
+                                        custom tailored,based on the parameters? Don't worry, we got you covered. You can also make requests from the custom code, so you can get data from other APIs.
+                                    </p>
+                                   </div>
+                                   <div>
+                                        <a class="specs-down-btn" href="">Learn more</a>
+                                   </div>
+                                </div>
+                         </div>
+                       </div>
+            
+                       <!-- block 3 end -->
+        </div>
+
+
+    </div>
+    <!-- Pagination -->
+    <!-- <div class="swiper-pagination swiper-pagination1"></div> -->
+</div>
+</div>
+
+  
+    <!--specs Mobile versiion -->
+    <div class="specs-container">
+
+     <!-- block 1 -->
+      <div class="specs-wrapper">
+        <div>
+            <img class="specs-gradient" src="./images/Blur.png" alt="">
+            <img class="specs-image" src="./images/Vector.png" alt="">
+        </div>
+        <div class="specs-img-wrapper">
+                <div class="wrapper-for-label">
+                    <div class="specs-img01-wrapper">
+                        <img class="specs-img01" src="./images/01.png" alt="1 png">
+                        <button class="stack-img-label1">partial mock</button>
+                    </div>
+                </div>
+            <img class="specs-stack1" src="./images/Stacks.png" alt="stacks">
+                <div class="specs-down-text-wrapper">
+                   <div>
+                    <p class="specs-down-text">Mock/change only a part 
+                        of the request/response. For example, you can add an extra header to the request, like an auth token. Or you can add an icon to every element in the response list.
+                    </p>
+                   </div>
+                   <div>
+                        <a class="specs-down-btn" href="">Learn more</a>
+                   </div>
+                </div>
+         </div>
+       </div>
+
+        <!-- block 2 -->
+        <div class="specs-wrapper">
+            <div>
+                <img class="specs-gradient" src="./images/Blur.png" alt="">
+                <img class="specs-image" src="./images/Vector.png" alt="">
+            </div>
+            <div class="specs-img-wrapper">
+                    <div class="wrapper-for-label">
+                        <div class="specs-img01-wrapper">
+                            <img class="specs-img01" src="./images/02.png" alt="1 png">
+                            <button class="stack-img-label2">full mock</button>
+                        </div>
+                    </div>
+                <img class="specs-stack1" src="./images/Stack2.png" alt="stacks">
+                    <div class="specs-down-text-wrapper">
+                       <div>
+                        <p class="specs-down-text">Mock an entire response. When your backend is not ready, just mock like it's working
+                        </p>
+                       </div>
+                       <!-- <div>
+                            <a class="specs-down-btn" href="">Learn more</a>
+                       </div> -->
+                    </div>
+             </div>
+           </div>
+
+
+     <!-- block 3 -->
+     <div class="specs-wrapper">
+        <div>
+            <img class="specs-gradient" src="./images/Blur.png" alt="">
+            <img class="specs-image" src="./images/Vector.png" alt="">
+        </div>
+        <div class="specs-img-wrapper">
+                <div class="wrapper-for-label">
+                    <div class="specs-img01-wrapper">
+                        <img class="specs-img01" src="./images/03.png" alt="1 png">
+                        <button class="stack-img-label3">code based smart rules</button>
+                    </div>
+                </div>
+            <img class="specs-stack1" src="./images/Stack3.png" alt="stacks">
+                <div class="specs-down-text-wrapper">
+                   <div>
+                    <p class="specs-down-text">You want to achieve something
+                        custom tailored,based on the parameters? Don't worry, we got you covered. You can also make requests from the custom code, so you can get data from other APIs.
+                    </p>
+                   </div>
+                   <div>
+                        <a class="specs-down-btn" href="">Learn more</a>
+                   </div>
+                </div>
+         </div>
+       </div>
+   </div>
+
+
+</section>
+
+
+<!-- Customer section -->
+<section class="customer-section">
+
+    <div class="customer-section-wrapper">
+        <h2 class="customer-title">What do our <span class="customer-inner-title">customers</span> think?</h2>
+        <!-- card -->
+       <div class="card">
+       </div>
+
+         <!-- Swiper slider -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card-container">
+            <div class="card-wrapper">
+             <div>
+                 <img class="customer-img" src="./images/user1.png" alt="">
+             </div>
+             <h2 class="card-title">Andrea<span class="card-inner-title"> / QA engineer</span ></h2>
+             <p class="card-message">“I could speed up manual and automated testing processes, and I see devs making fewer errors”</p>
+             <div class="quote-container">
+                 <div>
+                     <img class="quote-inner-imgUp" src="./images/quote.png" alt="">
+                 </div>
+                 <h2 class="quote-title"> Reduced complexity
+                    while lessened error count</h2>
+                 <div class="quote-inner-imgDown-container">
+                     <img class="quote-inner-imgDown" src="./images/quoteDown.png" alt="">
+                 </div>
+             </div>
+            </div>
+         </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card-container">
+            <div class="card-wrapper">
+             <div>
+                 <img class="customer-img" src="./images/user2.png" alt="">
+             </div>
+             <h2 class="card-title">András<span class="card-inner-title">/ software engineer manager</span ></h2>
+             <p class="card-message">“Finally I could get rid of all the mock code  and data we had in the system!. Truly amazing acceleration”</p>
+             <div class="quote-container">
+                 <div>
+                     <img class="quote-inner-imgUp" src="./images/quote.png" alt="">
+                 </div>
+                 <h2 class="quote-title"> Replaced mock with real API without worry</h2>
+                 <div class="quote-inner-imgDown-container">
+                     <img class="quote-inner-imgDown" src="./images/quoteDown.png" alt="">
+                 </div>
+             </div>
+            </div>
+         </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card-container">
+            <div class="card-wrapper">
+             <div>
+                 <img class="customer-img" src="./images/user3.png" alt="">
+             </div>
+             <h2 class="card-title">Milán<span class="card-inner-title"> / developer</span ></h2>
+             <p class="card-message">“I'm a freelancer developer working on multiple projects simultaneously. With ProxyTool I can better manage the workload and prepare prototypes to customers faster.”</p>
+             <div class="quote-container3">
+                 <div>
+                     <img class="quote-inner-imgUp" src="./images/quote.png" alt="">
+                 </div>
+                 <h2 class="quote-title"> Less code had been written</h2>
+                 <div class="quote-inner-imgDown-container">
+                     <img class="quote-inner-imgDown" src="./images/quoteDown.png" alt="">
+                 </div>
+             </div>
+            </div>
+         </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+    </div>
+</section>
+
+
+<!-- --- Pricing Section --- -->
+<section class="pricing-section">
+    <div class="title-wrapper"><h2 class="pricing-title">How much will it <span class="pricing-inner-title">cost</span> for me?</h2></div>
+     
+    <div class="pricing-section-wrapper">
+
+            <!-- Pricing image -->
+            <!-- <div class="pricing-img-container">
+               <img class="pricing-img" src="./images/pricing.png" alt="">
+            </div> -->
+            <div class="pricing-img-container">
+                <div class="pricing-img"></div>
+             </div>
+            
+           <!-- Pricing gradient image -->
+            <div class="pricing-gradient-img-container"> 
+                <img class="pricing-gradient-img" src="./images/pricing-gradient.png" alt="">
+            </div>
+
+            <!-- -- Desktop Version Pricing Table -- -->
+            <!-- Pricing content -->
+            <div class="pricing-content-wrapper">
+                <!-- Pricing table -->
+                <div class="pricing-table">
+                    <!-- column 1 -->
+                    <div class="list-column">
+                        <div class="hidden-box"></div>
+                        <ul class="list-container">
+                            <li class="pricing-text1">Maximum available requests/month</li>
+                            <div class="pricing-icon tooltip"><i class="fa-solid fa-exclamation">
+                                <div class="tooltiptext">
+                                    <p>The amount of requests that is allowed to go through Proxytool in the given time period</p>
+                                </div>
+
+                            </i></div>
+                           
+                        </ul>
+                        <ul class="list-container">
+                            <li class="pricing-text">Members seats</li>
+                            <div class="pricing-icon tooltip">
+                                <i class="fa-solid fa-exclamation">
+                                <div class="tooltiptext">
+                                    <p>The number of members you can have in your projects, including you. The limit is for your whole account, not by project.</p>
+                                </div>
+                                </i>
+                            </div>
+                        </ul>
+                        <ul class="list-container">
+                            <li class="pricing-text">Log retention</li>
+                            <div class="pricing-icon tooltip">
+                                <i class="fa-solid fa-exclamation">
+                                <div class="tooltiptext">
+                                    <p>Logs will be deleted after the time period elapsed.</p>
+                                </div>
+                                </i>
+                            </div>
+                        </ul>
+                        <ul class="list-container">
+                            <li class="pricing-text">Free from ads</li>
+                            <div class="pricing-icon ">
+                                <i class="fa-solid fa-exclamation">
+                                </i>
+                            </div>
+                        </ul>
+                    </div>
+                    <!-- column 2 -->
+                    <div class="free-trial-container">
+                        <div class="free-trial-wrapper">
+                            <div>
+                                <span class="free-trial-title"> FREE TRIAL</span>
+                                <h3> $ 0*</h3>
+                            </div>
+                            <p class="pricing-info">5000</p>
+                            <p class="pricing-info">1</p>
+                            <p class="pricing-info">3 days</p>
+                            <p class=""><i class="fa-solid fa-check"></i></p>
+                            <small>*until request depletion</small>
+                        </div>
+                    </div>
+
+                    <!-- column 3 -->
+                        <div class="free-trial-container">
+                            <div class="free-trial-wrapper">
+                                <div>
+                                    <span class="free-trial-title"> CODER</span>
+                                    <h3> $ 30</h3>
+                                </div>
+                                <p class="pricing-info">5000</p>
+                                <p class="pricing-info">1</p>
+                                <p class="pricing-info">3 days</p>
+                                <p class=""><i class="fa-solid fa-check"></i></p>
+                                <small>charged monthly</small>
+                            </div>
+                        </div>
+
+                    <!-- column 4 -->
+                    <div class="free-trial-container startup-container">
+                        <div class="free-trial-wrapper">
+                            <div>
+                                <span class="free-trial-title"> START UP</span>
+                                <h3> $ 69</h3>
+                            </div>
+                            <p class="pricing-info">15000</p>
+                            <p class="pricing-info">6</p>
+                            <p class="pricing-info">14 days</p>
+                            <p class=""><i class="fa-solid fa-check"></i></p>
+                            <small>charged monthly</small>
+                        </div>
+                    </div>
+
+                    <!-- column 5 -->
+                    <div class="free-trial-container">
+                        <div class="free-trial-wrapper">
+                            <div>
+                                <span class="free-trial-title"> SCALE UP</span>
+                                <h3> $ 99</h3>
+                            </div>
+                            <p class="pricing-info">32000</p>
+                            <p class="pricing-info">12</p>
+                            <p class="pricing-info">3 days</p>
+                            <p class=""><i class="fa-solid fa-check"></i></p>
+                            <small>charged monthly</small>
+                        </div>
+                    </div>
+
+                    <!-- column 6 -->
+                    <div class="free-trial-container">
+                        <div class="free-trial-wrapper">
+                            <div>
+                                <span class="free-trial-title"> ENTERPRISE</span>
+                                <h3> $ 0 *</h3>
+                            </div>
+                            <p class="pricing-info"><a href="">Contact uss</a></p>
+                            <p class="pricing-info">Custom</p>
+                            <p class="pricing-info">Custom</p>
+                            <p class=""><i class="fa-solid fa-check"></i></p>
+                            <small>charged monthly</small>
+                        </div>
+                    </div>
+                    <!-- Column end -->
+
+                </div>
+
+                
+            </div>
+            <!-- get started button -->
+            <div class="pricing-btn-wrapper">
+                <button class="pricing-get-started-btn">Get started</button>
+            </div>
+
+            <!-- Mobile version Pricing Table -->
+
+              <!-- Swiper -->
+            <div class="mobile-pricing-table">
+               <div class="mobile-pricing-table-wrapper">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        
+                        <!-- Slide 1 -->
+                      <div class="swiper-slide">
+
+                        <div class="pricing-card-container">
+                            <div class="pricing-card-wrapper">
+                                <div>
+                                    <p class="pricing-card-title"> FREE TRIAL</p>
+                                    <h3 class="card-price"> $ 0*</h3>
+                                </div>
+                                <p class="pricing-card-info">5000</p>
+                                <ul class="list-container">
+                                    <li class="pricing-text">Maximum available requests/month</li>
+                                    <div class="pricing-icon tooltip">
+                                        <i class="fa-solid fa-exclamation">
+                                        <div class="tooltiptext">
+                                            <p>The amount of requests that is allowed to go through Proxytool in the given time period.</p>
+                                        </div>
+                                        </i>
+                                    </div>
+                                </ul>
+
+                                <p class="pricing-card-info">1</p>
+                                <ul class="list-container2">
+                                    <li class="pricing-text">Members seats</li>
+                                    <div class="pricing-icon tooltip">
+                                        <i class="fa-solid fa-exclamation">
+                                        <div class="tooltiptext">
+                                            <p>The number of members you can have in your projects, including you. The limit is for your whole account, not by project.</p>
+                                        </div>
+                                        </i>
+                                    </div>
+                                </ul>
+
+                                <p class="pricing-card-info">3 days</p>
+                                <ul class="list-container3">
+                                    <li class="pricing-text">Log retention</li>
+                                    <div class="pricing-icon tooltip">
+                                        <i class="fa-solid fa-exclamation">
+                                        <div class="tooltiptext">
+                                            <p>Logs will be deleted after the time period elapsed.</p>
+                                        </div>
+                                        </i>
+                                    </div>
+                                </ul>
+                                <p class="card-down-text">*until request depletion</p>
+                            </div>
+                        </div>
+
+                      </div>
+                      <!-- slide 2 -->
+                      <div class="swiper-slide">
+                        <div class="pricing-card-container">
+                            <div class="pricing-card-wrapper">
+                                <div>
+                                    <p class="pricing-card-title"> CODER</p>
+                                    <h3 class="card-price"> $ 30</h3>
+                                </div>
+                                <p class="pricing-card-info">5000</p>
+                                <ul class="list-container">
+                                    <li class="pricing-text">Maximum available requests/month</li>
+                                    <div class="pricing-icon tooltip">
+                                        <i class="fa-solid fa-exclamation">
+                                        <div class="tooltiptext">
+                                            <p>The amount of requests that is allowed to go through Proxytool in the given time period.</p>
+                                        </div>
+                                        </i>
+                                    </div>
+                                </ul>
+
+                                <p class="pricing-card-info">1</p>
+                                <ul class="list-container2">
+                                    <li class="pricing-text">Members seats</li>
+                                    <div class="pricing-icon tooltip">
+                                        <i class="fa-solid fa-exclamation">
+                                        <div class="tooltiptext">
+                                            <p>The number of members you can have in your projects, including you. The limit is for your whole account, not by project.</p>
+                                        </div>
+                                        </i>
+                                    </div>
+                                </ul>
+
+                                <p class="pricing-card-info">3 days</p>
+                                <ul class="list-container3">
+                                    <li class="pricing-text">Log retention</li>
+                                    <div class="pricing-icon tooltip">
+                                        <i class="fa-solid fa-exclamation">
+                                        <div class="tooltiptext">
+                                            <p>Logs will be deleted after the time period elapsed.</p>
+                                        </div>
+                                        </i>
+                                    </div>
+                                </ul>
+                                <p class="card-down-text">charged monthly
+                                </p>
+                            </div>
+                        </div>
+                      </div>
+                      <!-- slide 3 -->
+                      <div class="swiper-slide">
+                        <div class="pricing-card-container">
+                            <div class="pricing-card-wrapper">
+                                <div>
+                                    <p class="pricing-card-title"> START UP
+                                    </p>
+                                    <h3 class="card-price"> $ 69</h3>
+                                </div>
+                                <p class="pricing-card-info">15000</p>
+                                <ul class="list-container">
+                                    <li class="pricing-text">Maximum available requests/month</li>
+                                    <div class="pricing-icon tooltip">
+                                        <i class="fa-solid fa-exclamation">
+                                        <div class="tooltiptext">
+                                            <p>The amount of requests that is allowed to go through Proxytool in the given time period.</p>
+                                        </div>
+                                        </i>
+                                    </div>
+                                </ul>
+
+                                <p class="pricing-card-info">6</p>
+                                <ul class="list-container2">
+                                    <li class="pricing-text">Members seats</li>
+                                    <div class="pricing-icon tooltip">
+                                        <i class="fa-solid fa-exclamation">
+                                        <div class="tooltiptext">
+                                            <p>The number of members you can have in your projects, including you. The limit is for your whole account, not by project.</p>
+                                        </div>
+                                        </i>
+                                    </div>
+                                </ul>
+
+                                <p class="pricing-card-info">14 days</p>
+                                <ul class="list-container3">
+                                    <li class="pricing-text">Log retention</li>
+                                    <div class="pricing-icon tooltip">
+                                        <i class="fa-solid fa-exclamation">
+                                        <div class="tooltiptext">
+                                            <p>Logs will be deleted after the time period elapsed.</p>
+                                        </div>
+                                        </i>
+                                    </div>
+                                </ul>
+                                <p class="card-down-text">charged monthly</p>
+                            </div>
+                        </div>
+
+                      </div>
+
+                      <!-- slide 4 -->
+                      <div class="swiper-slide">
+                        <div class="pricing-card-container">
+                            <div class="pricing-card-wrapper">
+                                <div>
+                                    <p class="pricing-card-title"> SCALE UP</p>
+                                    <h3 class="card-price"> $ 99</h3>
+                                </div>
+                                <p class="pricing-card-info">32000</p>
+                                <ul class="list-container">
+                                    <li class="pricing-text">Maximum available requests/month</li>
+                                    <div class="pricing-icon tooltip">
+                                        <i class="fa-solid fa-exclamation">
+                                        <div class="tooltiptext">
+                                            <p>The amount of requests that is allowed to go through Proxytool in the given time period.</p>
+                                        </div>
+                                        </i>
+                                    </div>
+                                </ul>
+
+                                <p class="pricing-card-info">12</p>
+                                <ul class="list-container2">
+                                    <li class="pricing-text">Members seats</li>
+                                    <div class="pricing-icon tooltip">
+                                        <i class="fa-solid fa-exclamation">
+                                        <div class="tooltiptext">
+                                            <p>The number of members you can have in your projects, including you. The limit is for your whole account, not by project.</p>
+                                        </div>
+                                        </i>
+                                    </div>
+                                </ul>
+
+                                <p class="pricing-card-info">3 days</p>
+                                <ul class="list-container3">
+                                    <li class="pricing-text">Log retention</li>
+                                    <div class="pricing-icon tooltip">
+                                        <i class="fa-solid fa-exclamation">
+                                        <div class="tooltiptext">
+                                            <p>Logs will be deleted after the time period elapsed.</p>
+                                        </div>
+                                        </i>
+                                    </div>
+                                </ul>
+                                <p class="card-down-text">charged monthly</p>
+                            </div>
+                        </div>
+                      </div>
+
+                      <!-- slide 5 -->
+                      <div class="swiper-slide">
+                        <div class="pricing-card-container">
+                            <div class="pricing-card-wrapper">
+                                <div>
+                                    <p class="pricing-card-title"> ENTERPRISE</p>
+                                    <h3 class="card-price"> $ 0 *</h3>
+                                </div>
+                                <div class="contact-btn-container">
+                                    <p class="pricing-contact-btn"><a href="">Contact uss</a></p>
+                                </div>
+                                <ul class="list-container">
+                                    <li class="pricing-text">Maximum available requests/month</li>
+                                    <div class="pricing-icon tooltip">
+                                        <i class="fa-solid fa-exclamation">
+                                        <div class="tooltiptext">
+                                            <p>The amount of requests that is allowed to go through Proxytool in the given time period.</p>
+                                        </div>
+                                        </i>
+                                    </div>
+                                </ul>
+
+                                <p class="pricing-card-info">Custom</p>
+                                <ul class="list-container2">
+                                    <li class="pricing-text">Members seats</li>
+                                    <div class="pricing-icon tooltip">
+                                        <i class="fa-solid fa-exclamation">
+                                        <div class="tooltiptext">
+                                            <p>The number of members you can have in your projects, including you. The limit is for your whole account, not by project.</p>
+                                        </div>
+                                        </i>
+                                    </div>
+                                </ul>
+
+                                <p class="pricing-card-info">Custom</p>
+                                <ul class="list-container3">
+                                    <li class="pricing-text">Log retention</li>
+                                    <div class="pricing-icon tooltip">
+                                        <i class="fa-solid fa-exclamation">
+                                        <div class="tooltiptext">
+                                            <p>Logs will be deleted after the time period elapsed.</p>
+                                        </div>
+                                        </i>
+                                    </div>
+                                </ul>
+                                <p class="card-down-text">charged monthly</p>
+                            </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="get-started-btn-wrapper">
+                <button class="get-started-btn">Get started</button>
+            </div>
+        
+
+
+    </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="footer-section">
+    <section class="footer-section-wrapper">
+        <div class="footer">
+            <ul>
+                <li><a href="">Our story</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Privacy policy</a></li>
+                <li><a href="">Terms and conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer-icon">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p class="footer-text">© Proxytool LTD.</p>
+    </section>
+</footer>
+
+</main>
+
+<!-- swiper js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- JS -->
+    <script src="./script.js"></script>
+</body>
+</html>
