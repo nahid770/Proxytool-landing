@@ -19,28 +19,31 @@
 
 </head>
 <body>
+    <div id="modal"></div>
     <header>
         <nav>
           
             <img id="logo" src="./images/navLogo.png" alt="">
             <i id="ham-menu" class="fa-solid fa-bars"></i>
             <ul id="nav-bar">
-                <li><a href="">Nav link 1</a></li>
-                <li><a href="">Nav link 1</a></li>
-                <li><a href="">Nav link 1</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#specs">Specs</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#pricing">Pricing</a></li>
                 <!-- Mobile version -->
                 <div>
-                    <button class="signup-btn2">Sign up</button>
+                    <a href="https://dashboard.proxytool.me/register" target="_blank" class="signup-btn2">Sign up</a>
                 </div>
             </ul>
             <!-- Pc version -->
-            <button class="signup-btn">Sign up</button>
+            <a  href="https://dashboard.proxytool.me/register" target="_blank" class="signup-btn">Sign up</a>
         </nav>
     </header>
 
 <main>
     <!-- Hero section -->
     <section >
+        
         <div class="hero-section">
             <div class="tagline-container">
                 <h2 class="hero-title">Progress <span class="hero-sub-title"> faster,</span> deploy <span class="hero-sub-title"> sooner</span> with less code and errors</h2>
@@ -49,8 +52,8 @@
             </div>
     
             <div class="cta-container">
-                <button class="cta-signup-btn">sign up</button>
-                <button class="cta-btn">Try sandbox</button>
+                <a href="https://dashboard.proxytool.me/register" target="_blank"  class="cta-signup-btn">sign up</a>
+                <a href="https://dashboard.proxytool.me/sandbox"  target="_blank" class="cta-btn">Try sandbox</a>
             </div>
             
             <!-- mocking -->
@@ -66,9 +69,24 @@
             <div class="video-section-container">
                 <p class="header-text">Watch the video to learn more</p>
                 <!-- video -->
-                <div class="video-wrapper">
-                    <iframe  class="video"  src="https://www.youtube.com/embed/HdLyb30OFT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <div class="video-container" alt="">
+                    <div id="video" class="">
+                      <div>
+                        <img class="video-preview-img" src="./images/iPad Pro 12.svg" alt="">
+                      </div>
+                      <div class="modal_inner">
+                      </div>
+                      <button onclick="playvideo()" class="startButton">
+                        <img class="play-button" src="./images/Play-2.png" alt="">
+                      </button>
+                      <a href="https://www.youtube.com/watch?v=HdLyb30OFT4" target="_blank" class="mobileStartButton">
+                        <img class="play-button" src="./images/Play-2.png" alt="">
+                      </a>
+            
+                    </div>
                 </div>
+                <!-- video end -->
             </div>
         </div>
     </section>
@@ -78,7 +96,7 @@
     <section class=" blog-section">
        <div class="blog-wrapper">
             <div>
-                <h2 class="blog-header-text">Some cool tagline explaining why they should read the posts</h2>
+                <h2 class="blog-header-text">You get help in every stage of your product</h2>
                 <div class="bg-logo-container">
                     <img class="bg-logo" src="./images/Logo.png" alt="">
                 </div>
@@ -87,32 +105,38 @@
           <div class="blog-card-container">
             <!-- card 1 -->
             <div class="blog-card">
-                <h2 class="blog-card-title">Blog post title Blog post title Blog post title</h2>
+                <h2 class="blog-card-title">Developing app with a new backend</h2>
                 <div>
-                    <p class="blog-card-text">Developing a frontend app without a backend (so the frontend team doesn't have to wait for the backend team to deploy something to start working)</p>
+                    <p class="blog-card-text">You want to start working on your app, but the backend is still behind in functionality. You either wait, or mock whole responses.
+
+                        With Proxytool, you can add any data to the response, to make it whole.</p>
                 </div>
                 <div class="blog-card-btn-wrapper">
-                    <a class="blog-card-btn" href="">Read more</a>
+                    <a class="blog-card-btn" href="https://blog.proxytool.io/integrate-backend-to-new-frontend-app/" target="_blank">Read more</a>
                 </div>
             </div>
             <!-- card 2 -->
             <div class="blog-card">
-                <h2 class="blog-card-title">Blog post title Blog post title Blog post title</h2>
+                <h2 class="blog-card-title">Zero-downtime when replacing the backend</h2>
                 <div>
-                    <p class="blog-card-text">Developing a frontend app without a backend (so the frontend team doesn't have to wait for the backend team to deploy something to start working)</p>
+                    <p class="blog-card-text">Your obsolete backend is replaced with a fancy new one. Changing the API URL, your app just crashes until everything is updated.
+
+                        With Proxytool, you can map the new API to the old format, enabling you to fix your app call-by-call.</p>
                 </div>
                 <div class="blog-card-btn-wrapper">
-                    <a class="blog-card-btn" href="">Read more</a>
+                    <a class="blog-card-btn" href="https://blog.proxytool.io/replace-your-backend-api/" target="_blank">Read more</a>
                 </div>
             </div>
             <!-- card 3 -->
             <div class="blog-card">
-                <h2 class="blog-card-title">Blog post title Blog post title Blog post title</h2>
+                <h2 class="blog-card-title">Testing hard-to-reproduce scenarios</h2>
                 <div>
-                    <p class="blog-card-text">Developing a frontend app without a backend (so the frontend team doesn't have to wait for the backend team to deploy something to start working)</p>
+                    <p class="blog-card-text">How would your app behave if the user does something weird? Would it break if it gets an error?
+
+                        With Proxytool you can set up very specific datasets, so you can check how your app behaves in different scenarios. </p>
                 </div>
                 <div class="blog-card-btn-wrapper">
-                    <a class="blog-card-btn" href="">Read more</a>
+                    <a class="blog-card-btn" href="https://blog.proxytool.io/simulating-unusual-scenarios-with-proxytool/" target="_blank">Read more</a>
                 </div>
             </div>
           </div>
@@ -123,123 +147,51 @@
 
 
 
-<!-- -- --- --- --- --- Specs Section --- ---- --- ---  -- -->
-<section class="specs-section-container">
+<!-- -- --- --- Specs Section --- ---- --->
+<section id="specs" class="specs-section-container">
     <h2 class="specs-title">Introducing <span class="specs-inner-title">Proxytool</span>, your new best friend for mocking</h2>
 
-
     <!-- specs Desktop version -->
-    
-<div class="desktop-slider-container">
-    <div class="gradient-img-container">
-        <img class="specs-gradient-pc" src="./images/Blur.png" alt="">
-         <img class="specs-image" src="./images/Vector.png" alt="">
+    <div class="desktop-slider-container">
+
+        <div class="specs-img-container">
+            <div class="specs-image"></div>
+        </div>
+
+        <div class="gradient-img-container">
+            <img class="specs-gradient-pc" src="./images/Blur.png" alt="">
+        </div>
     </div>
 
-  <div class="swiper-container slider1">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">
-           <!-- block 1 -->
-           
-                <div class="specs-wrapper">
-                    <div class="specs-img-wrapper">
-                            <div class="wrapper-for-label">
-                                <div class="specs-img01-wrapper">
-                                    <img class="specs-img01" src="./images/01.png" alt="1 png">
-                                    <button class="stack-img-label1">partial mock</button>
-                                </div>
-                            </div>
-                        <img class="specs-stack1" src="./images/Stacks.png" alt="stacks">
-                            <div class="specs-down-text-wrapper">
-                               <div>
-                                <p class="specs-down-text">Mock/change only a part 
-                                    of the request/response. For example, you can add an extra header to the request, like an auth token. Or you can add an icon to every element in the response list.
-                                </p>
-                               </div>
-                               <div>
-                                    <a class="specs-down-btn" href="">Learn more</a>
-                               </div>
-                            </div>
-                     </div>
-                   </div>
-           
-           <!-- block 1 end -->
-        </div>
 
-
-
-        <div class="swiper-slide">
-           <!-- block 2 -->
-
-           <div class="specs-wrapper">
-            <div class="specs-img-wrapper">
-                    <div class="wrapper-for-label">
-                        <div class="specs-img01-wrapper">
-                            <img class="specs-img01" src="./images/02.png" alt="1 png">
-                            <!-- <button class="stack-img-label1">partial mock</button> -->
-                            <button class="stack-img-label2">full mock</button>
-                        </div>
-                    </div>
-                <img class="specs-stack2" src="./images/Stack2.png" alt="stacks">
-                    <div class="specs-down-text-wrapper">
-                       <div>
-                        <p class="specs-down-text2">Mock an entire response. When your backend is not ready, just mock like it's working
-                        </p>
-                       </div>
-                       <div>
-                            <a class="specs-down-btn2" href="">Learn more</a>
-                       </div>
-                    </div>
-             </div>
-           </div>
-
-           <!-- block 2 end -->
-        </div>
-        <div class="swiper-slide">
-                      <!-- block 3 -->
-
-                      <div class="specs-wrapper">
-                        <div class="specs-img-wrapper">
-                                <div class="wrapper-for-label">
-                                    <div class="specs-img01-wrapper">
-                                        <img class="specs-img01" src="./images/03.png" alt="1 png">
-                                        <!-- <button class="stack-img-label1">partial mock</button> -->
-                                          <button class="stack-img-label3">code based smart rules</button>
-                                    </div>
-                                </div>
-                            <img class="specs-stack3" src="./images/Stack3.png" alt="stacks">
-                                <div class="specs-down-text-wrapper">
-                                   <div>
-                                    <p class="specs-down-text">You want to achieve something
-                                        custom tailored,based on the parameters? Don't worry, we got you covered. You can also make requests from the custom code, so you can get data from other APIs.
-                                    </p>
-                                   </div>
-                                   <div>
-                                        <a class="specs-down-btn" href="">Learn more</a>
-                                   </div>
-                                </div>
-                         </div>
-                       </div>
-            
-                       <!-- block 3 end -->
-        </div>
-
-
-    </div>
-    <!-- Pagination -->
-    <!-- <div class="swiper-pagination swiper-pagination1"></div> -->
-</div>
-</div>
+    <!-- specs content -->
 
   
+
+
+
+
+
+
+
+
+
+
+
+
     <!--specs Mobile versiion -->
     <div class="specs-container">
 
      <!-- block 1 -->
       <div class="specs-wrapper">
+
+
+
         <div>
             <img class="specs-gradient" src="./images/Blur.png" alt="">
-            <img class="specs-image" src="./images/Vector.png" alt="">
+            <div class="mobile-specs-container">
+               <div class="specs-image-mobile"></div>
+            </div>
         </div>
         <div class="specs-img-wrapper">
                 <div class="wrapper-for-label">
@@ -259,14 +211,14 @@
                         <a class="specs-down-btn" href="">Learn more</a>
                    </div>
                 </div>
-         </div>
+        </div>
        </div>
 
         <!-- block 2 -->
         <div class="specs-wrapper">
             <div>
                 <img class="specs-gradient" src="./images/Blur.png" alt="">
-                <img class="specs-image" src="./images/Vector.png" alt="">
+                <!-- <img class="specs-image" src="./images/Vector.png" alt=""> -->
             </div>
             <div class="specs-img-wrapper">
                     <div class="wrapper-for-label">
@@ -293,7 +245,7 @@
      <div class="specs-wrapper">
         <div>
             <img class="specs-gradient" src="./images/Blur.png" alt="">
-            <img class="specs-image" src="./images/Vector.png" alt="">
+            <!-- <img class="specs-image" src="./images/Vector.png" alt=""> -->
         </div>
         <div class="specs-img-wrapper">
                 <div class="wrapper-for-label">
@@ -315,14 +267,13 @@
                 </div>
          </div>
        </div>
-   </div>
-
+    </div>
 
 </section>
 
 
 <!-- Customer section -->
-<section class="customer-section">
+<section id="testimonials" class="customer-section">
 
     <div class="customer-section-wrapper">
         <h2 class="customer-title">What do our <span class="customer-inner-title">customers</span> think?</h2>
@@ -406,9 +357,13 @@
 
 
 <!-- --- Pricing Section --- -->
-<section class="pricing-section">
+<section id="pricing" class="pricing-section">
     <div class="title-wrapper"><h2 class="pricing-title">How much will it <span class="pricing-inner-title">cost</span> for me?</h2></div>
      
+           <!-- Pricing gradient image -->
+           <div class="pricing-gradient-img-container"> 
+            <img class="pricing-gradient-img" src="./images/pricing-gradient.png" alt="">
+        </div>
     <div class="pricing-section-wrapper">
 
             <!-- Pricing image -->
@@ -419,10 +374,7 @@
                 <div class="pricing-img"></div>
              </div>
             
-           <!-- Pricing gradient image -->
-            <div class="pricing-gradient-img-container"> 
-                <img class="pricing-gradient-img" src="./images/pricing-gradient.png" alt="">
-            </div>
+
 
             <!-- -- Desktop Version Pricing Table -- -->
             <!-- Pricing content -->
@@ -475,7 +427,7 @@
                         <div class="free-trial-wrapper">
                             <div>
                                 <span class="free-trial-title"> FREE TRIAL</span>
-                                <h3> $ 0*</h3>
+                                <h3> <span class="dollor-sign">€</span> 0 <span class="hash-sign">*</span></h3>
                             </div>
                             <p class="pricing-info">5000</p>
                             <p class="pricing-info">1</p>
@@ -490,7 +442,7 @@
                             <div class="free-trial-wrapper">
                                 <div>
                                     <span class="free-trial-title"> CODER</span>
-                                    <h3> $ 30</h3>
+                                    <h3> <span class="dollor-sign">€</span> 49</h3>
                                 </div>
                                 <p class="pricing-info">5000</p>
                                 <p class="pricing-info">1</p>
@@ -505,7 +457,7 @@
                         <div class="free-trial-wrapper">
                             <div>
                                 <span class="free-trial-title"> START UP</span>
-                                <h3> $ 69</h3>
+                                <h3><span class="dollor-sign">€</span> 99</h3>
                             </div>
                             <p class="pricing-info">15000</p>
                             <p class="pricing-info">6</p>
@@ -520,7 +472,7 @@
                         <div class="free-trial-wrapper">
                             <div>
                                 <span class="free-trial-title"> SCALE UP</span>
-                                <h3> $ 99</h3>
+                                <h3> <span class="dollor-sign">€</span> 199</h3>
                             </div>
                             <p class="pricing-info">32000</p>
                             <p class="pricing-info">12</p>
@@ -535,7 +487,7 @@
                         <div class="free-trial-wrapper">
                             <div>
                                 <span class="free-trial-title"> ENTERPRISE</span>
-                                <h3> $ 0 *</h3>
+                                <h3> <span class="dollor-sign">€</span> 0 <span class="hash-sign">*</span></h3>
                             </div>
                             <p class="pricing-info"><a href="">Contact uss</a></p>
                             <p class="pricing-info">Custom</p>
@@ -570,7 +522,7 @@
                             <div class="pricing-card-wrapper">
                                 <div>
                                     <p class="pricing-card-title"> FREE TRIAL</p>
-                                    <h3 class="card-price"> $ 0*</h3>
+                                    <h3 class="card-price"> <span class="dollor-sign">€</span> 0 <span class="hash-sign">*</span></h3>
                                 </div>
                                 <p class="pricing-card-info">5000</p>
                                 <ul class="list-container">
@@ -618,7 +570,7 @@
                             <div class="pricing-card-wrapper">
                                 <div>
                                     <p class="pricing-card-title"> CODER</p>
-                                    <h3 class="card-price"> $ 30</h3>
+                                    <h3 class="card-price"> <span class="dollor-sign">€</span> 49</h3>
                                 </div>
                                 <p class="pricing-card-info">5000</p>
                                 <ul class="list-container">
@@ -667,7 +619,7 @@
                                 <div>
                                     <p class="pricing-card-title"> START UP
                                     </p>
-                                    <h3 class="card-price"> $ 69</h3>
+                                    <h3 class="card-price"> <span class="dollor-sign">€</span> 99</h3>
                                 </div>
                                 <p class="pricing-card-info">15000</p>
                                 <ul class="list-container">
@@ -716,7 +668,7 @@
                             <div class="pricing-card-wrapper">
                                 <div>
                                     <p class="pricing-card-title"> SCALE UP</p>
-                                    <h3 class="card-price"> $ 99</h3>
+                                    <h3 class="card-price"> <span class="dollor-sign">€</span> 199</h3>
                                 </div>
                                 <p class="pricing-card-info">32000</p>
                                 <ul class="list-container">
@@ -764,7 +716,7 @@
                             <div class="pricing-card-wrapper">
                                 <div>
                                     <p class="pricing-card-title"> ENTERPRISE</p>
-                                    <h3 class="card-price"> $ 0 *</h3>
+                                    <h3 class="card-price"> <span class="dollor-sign">€</span> 0 <span class="hash-sign">*</span></h3>
                                 </div>
                                 <div class="contact-btn-container">
                                     <p class="pricing-contact-btn"><a href="">Contact uss</a></p>
@@ -830,17 +782,20 @@
 <!-- Footer Section -->
 <footer class="footer-section">
     <section class="footer-section-wrapper">
+        
+        <!-- <div class="dot2"></div>
+        <div class="dot3"></div> -->
         <div class="footer">
             <ul>
-                <li><a href="">Our story</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Privacy policy</a></li>
-                <li><a href="">Terms and conditions</a></li>
+                <li><div class="dot4"></div><a href="https://blog.proxytool.io/the-story/" target="_blank">Our story</a></li>
+                <li><div class="dot1"></div><a href="hello@proxytool.io" target="_blank">Contact</a></li>
+                <li><div class="dot1"></div><a href="/privacy">Privacy policy</a></li>
+                <li><div class="dot1"></div><a href="/terms">Terms and conditions</a></li>
             </ul>
         </div>
         <div class="footer-icon">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter fa-xl"></i>
+            <i class="fa-brands fa-linkedin fa-xl"></i>
         </div>
         <p class="footer-text">© Proxytool LTD.</p>
     </section>
