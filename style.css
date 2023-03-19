@@ -37,13 +37,14 @@ nav ul{
 
 }
 nav a{
-    font-size: 20px;
     color: white;
     margin: 0 20px;
     font-family: 'Sora';
     font-style: normal;
     font-weight: 400;
     font-size: 21px;
+    line-height: 26px;
+    letter-spacing: -0.05em;
 }
 
 #ham-menu{
@@ -64,7 +65,8 @@ nav ul.active{
     background-color: #00FFD1;
     padding: 16px 24px;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 17px;
+    line-height: 21px;
     display: block;
     font-family: 'Sora';
 }
@@ -75,9 +77,10 @@ nav ul.active{
     background-color: #00FFD1;
     padding: 10px 24px;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 17px;
     display: none;
     font-family: 'Sora';
+    line-height: 21px;
 }
 
 
@@ -114,6 +117,7 @@ nav ul.active{
     }
     .signup-btn2{
         display: block;
+    
     }
 
     nav ul{
@@ -128,7 +132,7 @@ nav ul.active{
         top: 50px;
         transition: all .50s ease;
         right: -150%;
-        height: 260px;
+        height: 270px;
         border-radius: 10px;
         padding-top: 30px;
         z-index: 1;
@@ -153,19 +157,21 @@ nav ul.active{
 .shape{
     position: absolute;
     top: 175px;
-    right:580px;
+    right:670px;
 }
 .line{
     position: absolute;
     top: 175px;
-    right:210px;
+    right:310px;
 }
 .hero-title{
     font-family: 'Sora';
     color: white;
     font-weight: 200;
-    font-size: 72px;
-    line-height: 91px;
+    font-size: 73px;
+    line-height: 92px;
+    text-align: center;
+    letter-spacing: -0.04em;
 }
 .hero-sub-title{
     font-family: 'Sora';
@@ -195,7 +201,7 @@ nav ul.active{
     }
     .shape{
         position: absolute;
-        width: 60px;
+        width: 50px;
         top: 90px;
         right:174px;
     }
@@ -203,7 +209,7 @@ nav ul.active{
         position: absolute;
         width: 60px;
         top: 90px;
-        right:20px;
+        right:29px;
     }
     .hero-title{
         font-family: 'Sora';
@@ -236,15 +242,15 @@ nav ul.active{
 @media (min-width: 481px) and (max-width: 768px) {
     .shape{
         position: absolute;
-        width: 60px;
+        width: 55px;
         top: 60px;
-        right:88px;
+        right:198px;
     }
     .line{
         position: absolute;
         width: 60px;
-        top: 90px;
-        right:185px;
+        top: 60px;
+        right:55px;
     }
     .hero-section{
         width: 430px;
@@ -287,6 +293,18 @@ nav ul.active{
         font-weight: 700;
         font-size: 30px;
     }
+    .shape{
+        position: absolute;
+        width: 55px;
+        top: 32px;
+        right:24px;
+    }
+    .line{
+        position: absolute;
+        width: 60px;
+        top: 60px;
+        right:273px;
+    }
 }
 
 .cta-container{
@@ -303,7 +321,8 @@ nav ul.active{
     background-color: #00FFD1;
     padding: 16px 24px;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 17px;
+    line-height: 21px;
     font-family: 'Sora';
 }
 .cta-btn{
@@ -314,9 +333,35 @@ nav ul.active{
     border: 1px solid #FFFFFF;
     padding: 16px 24px;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 17px;
+    line-height: 21px;
     color: white;
 }
+@media (min-width: 1025px) and (max-width:  1200px){
+    .hero-title{
+        font-size: 50px;
+         width: 800px;
+         margin: 0 auto;
+         line-height: 60px;
+    }
+    .hero-sub-title{
+        font-size: 50px;
+    }
+    .shape{
+        position: absolute;
+        width: 80px;
+        top: 112px;
+        right:380px;
+    }
+    .line{
+        position: absolute;
+        width: 90px;
+        top: 112px;
+        right:143px;
+    }
+}
+
+
 
 /* -- CTA Responsive -- */
 @media (min-width: 320px) and (max-width: 480px){
@@ -570,8 +615,8 @@ nav ul.active{
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 21px;
+    line-height: 29px;
     text-align: center;
     color: #FFFFFF;
     margin:48px 0;
@@ -598,7 +643,7 @@ nav ul.active{
 }
 
 /* @media (min-width: 320px) and (max-width: 480px) */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .mocking{
         width: 300px;
         height: 110px;
@@ -657,20 +702,84 @@ nav ul.active{
     }
 }
 
+@media (min-width: 768px) and (max-width: 1024px){
+    .mocking{
+        width: 500px;
+        height: 110px;
+    }
+    .mocking::before{
+        width: 500px;
+        height: 70px;
+       
+    }
+    .video-preview-img{
+        width: 500px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+      .play-button{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 156px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    
+      }
 
-.blog-section-title{
-width: 800px;
-font-family: 'Sora';
-font-weight: 300;
-font-size: 48px;
-line-height: 60px;
-text-align: center;
-letter-spacing: -0.04em;
-color: #FFFFFF;
+}
+@media (min-width: 1025px) and (max-width: 1200px){
+.hero-section{
+    max-width: 800px;
+}
+    .mocking{
+        width: 600px;
+        height: 110px;
+        top: 20px;
+    }
+    .mocking::before{
+        width: 600px;
+        height: 80px;
+       
+    }
+    .video-section-container{
+        margin-bottom: 500px;
+    }
+    .video-preview-img{
+        width: 500px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      .play-button{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 156px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+
 }
 
-
 /* --- Blog Section --- */
+.blog-section-title{
+    width: 800px;
+    font-family: 'Sora';
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    }
+
 .blog-section{
     margin-top: 203px;
    
@@ -682,14 +791,15 @@ color: #FFFFFF;
     text-align: center;
 }
 .blog-header-text{
-font-family: 'Sora';
-font-weight: 300;
-font-size: 48px;
-line-height: 60px;
-width: 800px;
-margin: 0 auto; 
-text-align: center;
-color: #FFFFFF;
+    font-family: 'Sora';
+    font-weight: 300;
+    width: 800px;
+    margin: 0 auto; 
+    color: #FFFFFF;
+    font-size: 49px;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: -0.04em;
 }
 
 .bg-logo-container{
@@ -741,14 +851,15 @@ z-index: 0;
     width: 348px;
     height: 414px;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
-    
     padding-right: 48px;
 }
 .blog-card-title{
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 31px;
+    line-height: 42px;
+    letter-spacing: -0.02em;
     margin-top: 0;
     margin-bottom: 24px;
     color: white;
@@ -757,7 +868,9 @@ z-index: 0;
 .blog-card-text{
     font-family: 'Manrope';
     font-weight: 400;
-    font-size: 20px;
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
     text-align: left;
     margin-bottom: 28px;
     color: white;
@@ -770,7 +883,8 @@ z-index: 0;
 .blog-card-btn{
     font-family: 'Sora';
     font-weight: 800;
-    font-size: 16px;
+    font-size: 17px;
+    line-height: 21px;
     color: #00FFD1;
     padding-bottom: 16px;
     border-bottom: 1px solid #00FFD1;
@@ -780,6 +894,8 @@ z-index: 0;
     .blog-card{
         padding-right: 24px;
         margin-bottom: 20px;
+        border-right: none;
+       
     }
     .blog-card-container{
     margin-top: 60px;
@@ -800,14 +916,68 @@ z-index: 0;
     .blog-card-title{
         font-size: 22px;
         margin-bottom: 40px;
+        line-height: 26px;
     }
     .blog-card-text{
         font-size: 16px ;
-        margin-bottom: 120px;
+        margin-bottom: 60px;
+        
     }
 
 }
 
+@media (min-width: 767px) and (max-width: 1200px){
+    header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #logo{
+        width: 100px;
+    }
+    .signup-btn{
+        padding: 10px 18px;
+        margin-right: 10px;
+       
+    }
+    .blog-header-text{
+        width: 500px;
+        margin: 0 auto; 
+        font-size: 39px;
+        line-height: 46px;
+        text-align: center;
+        padding-top: 300px;
+    }
+    .bg-logo{
+        padding-top: 30px;
+    }
+    .blog-card-container{
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 10px;
+        padding-bottom: 150px;
+    }
+    .blog-card-title{
+        font-size: 30px;
+    }
+    .blog-card-text{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px){
+    .blog-header-text{
+        width: 500px;
+        margin: 0 auto; 
+        font-size: 39px;
+        line-height: 46px;
+        text-align: center;
+        padding-top: 3px;
+    }
+    .bg-logo{
+        padding-top: 3px;
+    }
+}
 
 /* -------------- Specs Section -------------- */
 .specs-section-container{
@@ -913,7 +1083,10 @@ z-index: 0;
     font-family: 'Sora';
     font-style: normal;
     font-weight: 300;
-    font-size: 48px;
+    font-size: 49px;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: -0.04em;
     width: 800px;
     color: white;
 }
@@ -1121,6 +1294,7 @@ z-index: -1;
         font-size: 24px;
         width: 300px;
         text-align: center;
+        line-height: 32px;
         margin: 0 auto;
         padding-bottom: 100px;
       
@@ -1274,6 +1448,23 @@ z-index: -1;
     }
 }
 
+@media (min-width: 767px) and (max-width: 1024px){
+    .specs-title{
+        font-size: 39px;
+        width: 500px;
+        line-height: 46px;
+    }
+    .specs-gradient-pc{
+        max-width: 100%;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1200px){
+
+    .specs-gradient-pc{
+        max-width: 100%;
+    }
+}
+
 
 /* ---- ---- ---- Customer Section ---- ---- ---- */
 
@@ -1287,15 +1478,15 @@ z-index: -1;
     max-width: 1398px;
 }
 .customer-title{
-   margin: 0 auto;
-   padding-top: 60px;
-   padding-bottom: 124px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 124px;
     height: 60px;
     font-family: 'Sora';
     font-style: normal;
     font-weight: 300;
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 49px;
+    line-height: 62px;
     text-align: center;
     letter-spacing: -0.04em;
     color: #FFFFFF;
@@ -1338,8 +1529,9 @@ z-index: -1;
     font-family: 'Sora';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
     color: white;
     margin: 24px 0;
   
@@ -1355,8 +1547,8 @@ z-index: -1;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 21px;
+    line-height: 29px;
     text-align: center;
     color: #BFBFBF;
    
@@ -1389,8 +1581,8 @@ z-index: -1;
     font-family: 'Sora';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
-    line-height: 38px;
+    font-size: 31px;
+    line-height: 39px;
     text-align: center;
     letter-spacing: -0.04em;
     color: #FFFFFF;
@@ -1432,7 +1624,7 @@ z-index: -1;
 }
 
 /* @media (min-width: 320px) and (max-width: 480px) */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .customer-section{
         height: 860px;
     }
@@ -1514,6 +1706,21 @@ z-index: -1;
       }
 }
 
+
+@media (min-width: 768px) and (max-width: 1199px){
+    .card-container{
+        margin: 0 auto;
+    }
+    .customer-title{
+        width: 500px;
+        font-size: 39px;
+        line-height: 46px;
+        margin-top: 60px;
+        padding-bottom: 160px;
+    }
+}
+
+
 /* --- --- Pricing section --- --- */
 .pricing-section{
     height: 1024px;
@@ -1533,8 +1740,8 @@ z-index: -1;
     font-family: 'Sora';
     font-style: normal;
     font-weight: 300;
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 49px;
+    line-height: 62px;
     margin: 0 auto;
     text-align: center;
     letter-spacing: -0.04em;
@@ -1673,9 +1880,9 @@ z-index: -1;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    width: 173px;
-    line-height: 27px;
+    font-size: 21px;
+    width: 182px;
+    line-height: 29px;
     color: #BFBFBF;
     text-align: start;
 }
@@ -1683,8 +1890,8 @@ z-index: -1;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 21px;
+    line-height: 20px;
     color: #BFBFBF;
     text-align: start;
 }
@@ -1767,6 +1974,7 @@ z-index: -1;
 .free-trial-wrapper .dollor-sign{
     font-weight: 400;
     font-size: 23px;
+    line-height: 44px;
 }
 .free-trial-wrapper .hash-sign{
     font-weight: 400;
@@ -1785,7 +1993,7 @@ z-index: -1;
     font-family: 'Sora';
     font-style: normal;
     font-weight: 700;
-    font-size: 44px;
+    font-size: 45px;
     line-height: 44px;
     margin: 4px 0;
     color: white;
@@ -1802,7 +2010,7 @@ z-index: -1;
     font-family: 'Sora';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 21px;
     line-height: 18px;
     text-align: center;
     color: #FFFFFF;
@@ -1816,7 +2024,7 @@ z-index: -1;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 18px;
     color: #BFBFBF;
     
@@ -1848,7 +2056,8 @@ z-index: -1;
     font-family: 'Sora';
     font-style: normal;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 21px;
+    line-height: 26px;
     margin: 0 auto;
     text-align: center;
     color: #091314;
@@ -1867,7 +2076,7 @@ z-index: -1;
 
 /*  Pricing Table Mobile Responsive */
 /* @media (min-width: 320px) and (max-width: 480px) */
-@media screen and (max-width: 768px){
+@media (min-width: 320px) and (max-width: 1024px){
     .mobile-pricing-table{
         position: relative;
         padding-top: 80px;
@@ -2148,15 +2357,82 @@ z-index: -1;
     
 }
 
-@media (min-width: 768px){
+@media (min-width: 1025px){
     .mobile-pricing-table{
         display: none;
+        
     }
-    .get-started-btn{
-        left: 50%;
-    }
+  
 }
 
+@media (min-width: 768px) and (max-width: 1024px){
+    .pricing-title{
+        width: 500px;
+        font-size: 39px;
+        line-height: 46px;
+    }
+    .pricing-img{
+        width: 500px;
+        height: 110px;
+    }
+    .pricing-img::before{
+        width: 500px;
+        height: 70px;
+    }
+    .pricing-content-wrapper{
+        display: none;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1300px){
+    .pricing-img{
+        width: 600px;
+        height: 110px;
+    }
+    .pricing-img::before{
+        width: 600px;
+        height: 90px;
+        top: -10px;
+    }
+    .pricing-gradient-img{
+        max-width: 100%;
+    }
+    .pricing-title{
+        width: 800px;
+    }
+    .pricing-table{
+        width: 100%;
+        padding: 10px;
+    }
+  
+    .pricing-info a{
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+    .free-trial-container{
+        max-width: 150px;
+    }
+    .free-trial-wrapper{
+        max-width: 140px;
+    }
+    .list-column{
+        max-width: 180px;
+    }
+    .startup-container{
+        max-width: 140px;
+    }
+}
+/* @media (min-width: 1200px){
+    .pricing-gradient-img{
+        max-width: 100%;
+    }
+    .pricing-table{
+        width: 100%;
+        padding: 10px;
+    }
+    .pricing-title{
+        width: 800px;
+    }
+} */
 
 
 /* ---- Footer Section ---- */
@@ -2227,7 +2503,7 @@ z-index: -1;
 
 /* Footer Responsive Mobile */
 /* @media (min-width: 320px) and (max-width: 480px) */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .footer-section{
         height: 250px;
         width: 100%;
@@ -2257,7 +2533,8 @@ z-index: -1;
         font-family: 'Sora';
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 26px;
         color: #00FFD1;
         display:flex;
         justify-content: start;
@@ -2272,9 +2549,21 @@ z-index: -1;
     }
     .footer-text{
        margin-top: 0;
+       font-size: 13px;
+       line-height: 16px;
         
     }
     
 }
 
+@media (min-width: 768px) and (max-width: 1024px){
 
+    .footer ul{
+        gap: 20px;
+        width: 100%;
+    
+    }
+    .footer ul li{
+        gap: 20px;
+    }
+}

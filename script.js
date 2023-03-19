@@ -12,14 +12,10 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: 2,
     spaceBetween: 30,
     centeredSlides: true,
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: true,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       340: {
         slidesPerView: 1,
@@ -30,6 +26,10 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 20,
       },
       1024: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      1200: {
         slidesPerView: 2,
         spaceBetween: 20,
       },
@@ -40,6 +40,10 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  // Glitch Effect
+  
+
 
 
 
